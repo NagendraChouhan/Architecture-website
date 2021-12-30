@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../public/img/logo.jpg"/>
+    <link rel="stylesheet" href="css/Index.css"/>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header id="header" >
+        {{>header}}        
+    </header>
+    <menu class="dashboard-menu">
+        <div class="dashboard-option" onclick="location.href='/dashboard'">User Data</div>
+        <div class="dashboard-option">Update Data</div>
+        <div class="dashboard-option">Delete Data</div>
+        <div class="dashboard-option">Add Data</div>
+        <div class="dashboard-option" onclick="location.href='/dashboard/singup'">Singup</div>
+        <div class="dashboard-option">Logout</div>
+    </menu>
+    <div class="dashboard-div-main App-div-main">
+        <h2>Dashboard</h2>
+        <div >
+            <table class="dashboard-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone No.</th>
+                        <th>address</th>
+                        <th>Date and Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each userList}}
+                        <tr>
+                            <td>{{id}}</td>
+                            <td>{{name}}</td>
+                            <td>{{email}}</td>
+                            <td>{{phone}}</td>
+                            <td>{{address}}</td>
+                            <td>{{date}}</td>
+                            
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

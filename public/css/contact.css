@@ -1,0 +1,68 @@
+
+.contact-main{
+    background-color: rgb(216, 215, 215);
+    margin:70px 20% 0% 4%;
+    overflow: auto;
+    display: block;
+    justify-content: center;
+    padding: 2%;
+
+}
+.contact{
+    display: inline-flex;
+    width: 90%;
+    justify-content: center;
+    
+
+}
+.bem{
+    display: inline-flex;
+
+}
+.enquiry{
+    margin: 2%;
+    margin-top:10px ;
+    display: inline-flex;
+}
+.phone, .email, .office{
+    width: 200px;
+    height: 200px;
+    padding:2%;
+    margin: 1%;
+    border: 2px solid gray;
+}
+input,textarea{
+    background-color: white;
+    padding:2%;
+    margin-top: 2%;
+    width: 300px;
+    text-align: left;
+}
+span{
+    font-size: 13px;
+    color: red;
+    text-align: left;
+}
+textarea{
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 250px;
+    min-height: 150px;
+}
+button{
+    border: 2px solid gray;
+    margin-bottom: 1%;
+    padding: 5px;
+    width: 300px;
+}
+button:hover{
+    background-color: rgb(78, 77, 77);
+}
+.add-map{
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    /* float: right; */
+    margin: 2%;
+    padding: 1%;
+}

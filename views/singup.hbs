@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../public/img/logo.jpg"/>
+    <link rel="stylesheet" href="../css/Index.css"/>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header id="header" >
+        {{>header}}        
+    </header>
+    <menu class="dashboard-menu">
+        <div class="dashboard-option" onclick="location.href='/dashboard'">User Data</div>
+        <div class="dashboard-option">Update Data</div>
+        <div class="dashboard-option">Delete Data</div>
+        <div class="dashboard-option">Add Data</div>
+        <div class="dashboard-option" onclick="location.href='/dashboard/singup'">Singup</div>
+        <div class="dashboard-option">Logout</div>
+    </menu>
+    <div class="dashboard-div-main App-div-main">
+        <h2>Dashboard</h2>
+        <div class="singup-div">
+            <h2 style="text-align:center"><b><i><u>SingUp Page</u></i></b></h2><br/>
+            <img id="img" src="mandsaur_pharmacy.jpg" alt="mandsaur_pharmacy"  border="1px"><br>
+            <form  autocomplete="on" action="/dashboard/singup" name="persanalform" method="post" style="overflow:auto;">
+                <fieldset id="f1">
+                    <legend>Personal information</legend> 	
+                    <table align="center" cellpadding="5px" cellspacing="5px">
+                        <tr>
+                            <td>First Name</td>
+                            <td id="name"><input type="text" name="adminName" placeholder="Enter Full Name" pattern="^[a-z A-Z]+$" title="Only use ALPHABETS" autofocus required ><br>
+                            <span style="color:red" class="pass_class"></span></td></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" name="adminUsername" placeholder="Enter Email" required><br>
+                            <span style="color:red" class="pass_class"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="adminPass" placeholder="Enter password"  required> <br> 
+                            <span style="color:red" class="pass_class"></span></td>
+                            
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Reenter Password</td>
+                            <td><input type="password" name="adminRPass" placeholder="Reenter Password" required><br>
+                            <span style="color:red" class="pass_class"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td><input type="tel" name="adminNo" placeholder="Enter Number" pattern="[0-9]{10}" required><br>
+                            <span style="color:red" class="pass_class">Only enter Number of 10 digit</span></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <label><input type="radio" value="Male" name="gender" checked >Male</label>
+                                <label><input type="radio" value="Female" name="gender">Female</label>
+                                <label><input type="radio" value="Other" name="gender">Other</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DOB</td>
+                            <td><input type="date" name="Dob" min="1900-01-01" required><br>
+                            <span style="color:red" class="pass_class"></span></td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit">submit</td>
+                            <td><button type="reset">Reset</td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

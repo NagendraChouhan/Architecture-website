@@ -1,0 +1,46 @@
+.login-div-main{
+    text-align: center;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+input[type=text] ,[type=password],[type=date],[type=tel],[type=email] {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 400px;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.login-img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.container {
+    padding: 16px;
+}
+
+
